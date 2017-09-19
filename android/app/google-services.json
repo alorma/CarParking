@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "99714010012",
+    "firebase_url": "https://car-parking-b62ab.firebaseio.com",
+    "project_id": "car-parking-b62ab",
+    "storage_bucket": "car-parking-b62ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99714010012:android:60266911b4ad1541",
+        "android_client_info": {
+          "package_name": "com.alorma.carparking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99714010012-br60968kmav4jmupnr6nbors5krmdgdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alorma.carparking",
+            "certificate_hash": "a0173d519a83f6294a668448f92a15023aad6607"
+          }
+        },
+        {
+          "client_id": "99714010012-tdharrprs1boe5t8pj1c1f0oegpjokft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX69wzKKWdM_Li_zIvQFd93zkLE_JsmPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99714010012-tdharrprs1boe5t8pj1c1f0oegpjokft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
