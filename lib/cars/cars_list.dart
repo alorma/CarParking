@@ -1,3 +1,4 @@
+import 'package:car_parking/cars/car_list_item.dart';
 import 'package:car_parking/cars/cars_presenter.dart';
 import 'package:car_parking/data/car.dart';
 import 'package:flutter/material.dart';
@@ -53,8 +54,11 @@ class _CarsListState extends State<CarsList> implements CarsListViewContract {
   void onLoadCarsListError() {}
 
   Widget _buildCarsList(List<Car> list) {
-    return new Center(
-      child: new Text("Cars: ${list.length}"),
+    return new Container(
+      child: new ListView.builder(
+        itemBuilder: _buildCarItem,
+        itemCount: _list.length,
+      ),
     );
   }
 
@@ -62,5 +66,9 @@ class _CarsListState extends State<CarsList> implements CarsListViewContract {
     return new Center(
       child: new Text("No Cars"),
     );
+  }
+
+  Widget _buildCarItem(BuildContext context, int index) {
+    return new CarListItem(_list[index]);
   }
 }
