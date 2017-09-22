@@ -35,11 +35,14 @@ class _CarsListState extends State<CarsList> implements CarsListViewContract {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("YOUR CARS"),
+        title: new Padding(padding: new EdgeInsets.only(left: 16.0), child: new Text("YOUR CARS")),
       ),
       body: new Container(
         child: _list.length > 0 ? _buildCarsList(_list) : _buildNoCars(),
       ),
+      floatingActionButton: new FloatingActionButton(child: new Icon(Icons.add, color: Colors.white,), onPressed: () {
+
+      }),
     );
   }
 
